@@ -1,0 +1,114 @@
+#root{
+    align-items: initial;
+    justify-content: initial;
+    flex-direction: column;
+    color: #14171A;
+}
+nav{
+    align-items: center;
+    height: 50px;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    padding: 3px 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.075);
+    position: fixed;
+    width: 100%;
+    z-index: 400;
+}
+nav img{
+    height: 40px;
+}
+nav div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav div:nth-child(1){
+    justify-content: start;
+    font-size: 24px;
+    
+}
+.body{
+    height: 100vh;
+    display: flex;
+}
+.body_cnt{
+    padding-top: 56px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 3fr;
+}
+.side_nav{
+    min-width: 250px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    border-right: solid 2px #E1E8ED;
+}
+.search{
+    position: relative;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    border-bottom: solid 2px #1DA1F2;
+
+}
+.search input{
+    height: initial;
+    border: solid 1px #919294;
+    border-radius: 15px;
+    padding: 3px 10px;
+    
+}
+.user_contact{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: solid 1px #E1E8ED;
+    cursor: pointer;
+}
+.user_contact:hover{
+    transform: scale(1.01);
+    transition: 100ms;
+}
+.user_contact h2,.user_contact p{
+    margin: 0px;
+}
+.user_icon{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    background-color: orange;
+    color: white;
+    font-weight: 500;
+    border-radius: 50%;
+    justify-content: center;
+}
+.search_contact{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 69%;
+    background-color: white;
+    width: 240px;
+    overflow: hidden;
+}  .search_contact h2{
+    font-size: 18px !important;
+    max-width: 170px;
+    overflow: hidden;
+}
+.search_contact .user_contact{
+    padding: 10px;
+}
+.search_contact .user_icon{
+    height: 25px;
+    width: 25px;
+}
+.message_container{
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+}
